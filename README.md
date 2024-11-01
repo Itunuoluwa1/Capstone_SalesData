@@ -37,7 +37,7 @@ I listed all the products and then used excel AVERAGEIF function to calculate th
 ```
 =AVERAGEIF(C2:C50001,J7,H2:H50001)
 ```
-The table of the average sale per product:
+The table of the average sale per product:\
 ![Capstone Average Sales Per Product](https://github.com/user-attachments/assets/24944856-7125-4974-b295-a5f2f7520a0d)
 
 2. **Total Revenue By Region:**
@@ -45,11 +45,11 @@ I listed all the regions and then used excel SUMIF function to calculate the tot
 ```
 =SUMIF(D2:D50001,J17,H2:H50001)
 ```
-The table of the total revenue by region:
+The table of the total revenue by region:\
 ![Capstone Total Revenue By Region](https://github.com/user-attachments/assets/35ce6e43-4c82-4766-a8ba-bd2568d47002)
 
 #### My Personal Interesting Report
-I made a report of Region and Product By Revenue. In this report, the table shows the total revenue of the products in each region. I made a pivot chart which was a muktiple bar chart and also a region slicer that can be used to see the total revenue by product report for specific regions selected.
+I made a report of Region and Product By Revenue. In this report, the table shows the total revenue of the products in each region. I made a pivot chart which was a muktiple bar chart and also a region slicer that can be used to see the total revenue by product report for specific regions selected.\
 ![Capstone Region and Product By Revenue](https://github.com/user-attachments/assets/b28e52d3-dd92-4428-9a25-1d35cddfd64a)
 
 **Now the report using the slicer in specific regions**
