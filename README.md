@@ -40,6 +40,14 @@ I listed all the products and then used excel AVERAGEIF function to calculate th
 The table of the average sale per product:
 ![Capstone Average Sales Per Product](https://github.com/user-attachments/assets/24944856-7125-4974-b295-a5f2f7520a0d)
 
+2. **Total Revenue By Region:**
+I listed all the regions and then used excel SUMIF function to calculate the total revenue by region.
+```
+=SUMIF(D2:D50001,J17,H2:H50001)
+```
+The table of the total revenue by region:
+![Capstone Total Revenue By Region](https://github.com/user-attachments/assets/35ce6e43-4c82-4766-a8ba-bd2568d47002)
+
 
 
 
