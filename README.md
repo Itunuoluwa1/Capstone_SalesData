@@ -36,7 +36,7 @@ I used excel functions to make certain calculations and summarization in the dat
 1. **Average Sales Per Product:**
 I listed all the products and then used excel AVERAGEIF function to calculate the average sales per product of the sales data.
 ```
-=AVERAGEIF(C2:C50001,J7,H2:H50001)
+=AVERAGEIF($C$2:$C$9922,J7,$H$2:$H$9922)
 ```
 The table of the average sale per product:\
 ![Capstone Average Sales Per Product (1)](https://github.com/user-attachments/assets/b63f5693-28a2-4f27-ac14-7994ef886899)
@@ -44,7 +44,7 @@ The table of the average sale per product:\
 2. **Total Revenue By Region:**
 I listed all the regions and then used excel SUMIF function to calculate the total revenue by region.
 ```
-=SUMIF(D2:D50001,J17,H2:H50001)
+=SUMIF($D$2:$D$9922,J17,$H$2:$H$9922)
 ```
 The table of the total revenue by region:\
 ![Capstone Total Revenue By Region (1)](https://github.com/user-attachments/assets/a68e52e1-86bd-4a08-9d76-ebcdc67a241a)
@@ -53,7 +53,7 @@ The table of the total revenue by region:\
 I made a report of Region and Product By Revenue. In this report, the table shows the total revenue of the products in each region. I made a pivot chart which was a muktiple bar chart and also a region slicer that can be used to see the total revenue by product report for specific regions selected.\
 ![Capstone Region and Product By Revenue (1)](https://github.com/user-attachments/assets/13e7d3bf-193e-4b52-82c8-a3c1391ea280)
 
-**Now the report using the slicer in specific regions**
+**Now the report using the slicer in specific regions**\
 ![Capstone East Slicer](https://github.com/user-attachments/assets/7ccbf0af-51a2-4ad5-a24e-feff342e7919)
 ![Capstone North Slicer](https://github.com/user-attachments/assets/a782a64e-fedc-469a-acde-93d875ad3eed)
 ![Capstone South Slicer](https://github.com/user-attachments/assets/1990205e-cc5c-4507-9864-df89fd899323)
