@@ -11,25 +11,27 @@ dashboard that highlights these findings.
 - Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
 - Create any other interesting report.
 
+#### Remove Duplicate
+First and foremost, in my dataset I removed duplicate to impact the quality, accuracy nad reliability of my data. After removing duplicates in my data, the data of 50,000 rows was reduced to 9,921 rows removing 40,079 rows, therefore, making the data more accurate.
+
 #### Pivot table
-Firstly, I used pivot table and excel functions ton uncover key insight from the sales data in the Capstone project.\
+I used pivot table and excel functions ton uncover key insight from the sales data in the Capstone project.\
 Pivot table is used for summarization of data in the project in order to uncover insights for reporting. 
 
 1. **Total Sales By Product:**
 Pivot table to summarize total sales by product with pivot chart included.\
-![Capstone Total Sales By Product (1)](https://github.com/user-attachments/assets/f6969140-c843-4304-9bc8-ce60c3776477)
+![Capstone Total Sales By Product (2)](https://github.com/user-attachments/assets/5b221c8f-39ed-4d41-a276-4a72bd32f34b)
 
 2. **Total Sales By Region:**
 Pivot table to summarize total sales by region with pivot chart included.\
-![Capstone Total Sales By Region (1)](https://github.com/user-attachments/assets/e93dbe08-6f7c-41ef-8621-210d57ab513f)
+![Capstone Total Sales by Region (2)](https://github.com/user-attachments/assets/22bda19d-b5f8-4c5c-9530-988ecc489c90)
 
 3. **Total Sales By Month:**
 Pivot table to summarize total sales by month with pivot chart and slicer included. The slicer is used to filter the data in the pivot table and chart to only the selected data.\
-![Capstone Total Sales By Month (1)](https://github.com/user-attachments/assets/8751bf50-cec5-4c54-9162-7ea0ce839a0a) \
+![Capstone Total Sales By Month (2)](https://github.com/user-attachments/assets/b8e28762-7928-44ce-97ee-196c2e0f47df)
 I used yearly slicer to filter the pivot table and chart showing the total sales by month in each year.\
-![Capstone 2023 Slicer](https://github.com/user-attachments/assets/b5b2295b-e032-4640-8d41-7320387f6f63)
-![Capstone 2024 Slicer](https://github.com/user-attachments/assets/430c5bec-38bd-4bbc-b85b-b97a22f49914)
-
+![Capstone 2023](https://github.com/user-attachments/assets/1bc2aa06-6910-4243-b834-bc78233475b5)
+![Capstone 2024](https://github.com/user-attachments/assets/dc766e42-4406-43c8-8e27-6a2c029464f9)
 
 #### Excel Functions
 I used excel functions to make certain calculations and summarization in the dataset to attain insights from the project.
@@ -39,7 +41,7 @@ I listed all the products and then used excel AVERAGEIF function to calculate th
 =AVERAGEIF($C$2:$C$9922,J7,$H$2:$H$9922)
 ```
 The table of the average sale per product:\
-![Capstone Average Sales Per Product (1)](https://github.com/user-attachments/assets/b63f5693-28a2-4f27-ac14-7994ef886899)
+![Capstone Average Sales Per Product (2)](https://github.com/user-attachments/assets/16f1edbd-977b-4335-9f78-74f849326de1)
 
 2. **Total Revenue By Region:**
 I listed all the regions and then used excel SUMIF function to calculate the total revenue by region.
@@ -47,16 +49,15 @@ I listed all the regions and then used excel SUMIF function to calculate the tot
 =SUMIF($D$2:$D$9922,J17,$H$2:$H$9922)
 ```
 The table of the total revenue by region:\
-![Capstone Total Revenue By Region (1)](https://github.com/user-attachments/assets/a68e52e1-86bd-4a08-9d76-ebcdc67a241a)
+![Capstone Total Revenue By Region (2)](https://github.com/user-attachments/assets/ebfe8325-03e6-42db-ae81-8fd86f86fe9c)
 
 #### My Personal Interesting Report
 I made a report of Region and Product By Revenue. In this report, the table shows the total revenue of the products in each region. I made a pivot chart which was a muktiple bar chart and also a region slicer that can be used to see the total revenue by product report for specific regions selected.\
-![Capstone Region and Product By Revenue (1)](https://github.com/user-attachments/assets/13e7d3bf-193e-4b52-82c8-a3c1391ea280)
+![Capstone Region and Product By Revenue (2)](https://github.com/user-attachments/assets/b50994d1-9223-4fa8-afc9-1e9ab584debc)
 
-**Now the report using the slicer in specific regions**\
-![Capstone East Slicer](https://github.com/user-attachments/assets/7ccbf0af-51a2-4ad5-a24e-feff342e7919)
-![Capstone North Slicer](https://github.com/user-attachments/assets/a782a64e-fedc-469a-acde-93d875ad3eed)
-![Capstone South Slicer](https://github.com/user-attachments/assets/1990205e-cc5c-4507-9864-df89fd899323)
-![Capstone West Slicer](https://github.com/user-attachments/assets/802a17e1-bbfa-4446-a731-ce815ecab0d1)
-
+#### NOW THE REPORT USING THE SLICER IN SPECIFIC REGIONS
+![Capstone East](https://github.com/user-attachments/assets/bc9eba55-830c-4f60-be31-5f732302e623)
+![Capstone North](https://github.com/user-attachments/assets/a47b2f11-c6d4-4b4c-8abd-269b6a320103)
+![Capstone South](https://github.com/user-attachments/assets/48a78229-d995-424d-9ff0-249634c2a75b)
+![Capstone West](https://github.com/user-attachments/assets/5fecc155-bce7-4872-8dce-0d81454cc4f4)
 
