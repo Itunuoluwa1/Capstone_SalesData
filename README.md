@@ -171,7 +171,7 @@ select Region, SUM(Revenue_Or_Sales) as Total_Sales,
 8. **Products with no sales in the last quarter**
 The Query
 ```SQL
-select Product, SUM(Quantity) as ProductNoSale
+select Product, SUM(Quantity) as Product_With_No_Sale
 from SalesData
 where Product NOT IN (select Product from SalesData where 
 					  OrderDate >= DATEADD(quarter, -1, GETDATE())
