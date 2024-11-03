@@ -103,6 +103,85 @@ select * from [dbo].[SalesData]
 ```
 
 #### Actual Tasks
+1. **Total sales for each product category:**
+I firstly altered the table and added the Revenue_Or_Sales column, updated the column to be the product of quantity and unitprice before doing the task of showing Total sales for each product category.\
+The Query
+```SQL
+alter table [dbo].[SalesData]
+add Revenue_Or_Sales int 
+
+update SalesData
+set Revenue_Or_Sales = Quantity * UnitPrice
+
+select SUM(Revenue_Or_Sales) as TOTAL_SALES, PRODUCT from SalesData
+group by Product
+```
+
+2. **Number of sales transactions in each region**\
+The Query
+```SQL
+select COUNT(*) as NUMBER_OF_SALES, REGION from SalesData
+group by Region
+```
+
+3. **Highest-selling product by total sales value**\
+The Query
+```SQL
+select top 1 SUM(Revenue_Or_Sales) as TOTAL_SALES, PRODUCT from SalesData
+group by Product
+order by TOTAL_SALES desc
+```
+
+4. **Total revenue per product**
+The Query
+```SQL
+select SUM(Revenue_Or_Sales) as TotalRevenue, Product from SalesData
+group by Product
+```
+
+5. **Monthly sales totals for the current year**
+The Query
+```SQL
+select 
+	MONTH(OrderDate) as SalesMonth,
+	SUM(Revenue_Or_Sales) as MonthlySalesTotal 
+from SalesData
+where YEAR(OrderDate) = YEAR(GETDATE())
+group by MONTH(OrderDate)
+order by SalesMonth
+```
+
+6. **Top 5 customers by total purchase amount**
+The Query
+```SQL
+select top 5 SUM(Revenue_Or_Sales) as Total_Purchase_Amount, Customer_Id from SalesData
+group by Customer_Id
+order by Total_Purchase_Amount desc
+```
+
+7. **Percentage of total sales contributed by each region**
+The Query
+```SQL
+select Region, SUM(Revenue_Or_Sales) as Total_Sales,
+	   SUM(Revenue_Or_Sales) * 100 / SUM(SUM(Revenue_Or_Sales)) OVER() AS Percentage_Of_Sales
+	from SalesData
+	group by Region
+```
+
+8. **Products with no sales in the last quarter**
+The Query
+```SQL
+select Product, SUM(Quantity) as ProductNoSale
+from SalesData
+where Product NOT IN (select Product from SalesData where 
+					  OrderDate >= DATEADD(quarter, -1, GETDATE())
+					  )
+group by Product
+```
+
+
+
+
 
 
 
