@@ -101,6 +101,7 @@ A select statement is a type of Data Query Language(DQL). A DQL is used to fetch
 ```SQL
 select * from [dbo].[SalesData]
 ```
+![SQL Sales Data Table](https://github.com/user-attachments/assets/d35dc3d5-d62f-4e65-877b-3a24e627f94b)
 
 #### Actual Tasks
 1. **Total sales for each product category:**
@@ -116,6 +117,7 @@ set Revenue_Or_Sales = Quantity * UnitPrice
 select SUM(Revenue_Or_Sales) as TOTAL_SALES, PRODUCT from SalesData
 group by Product
 ```
+![SQL Sales Data 1](https://github.com/user-attachments/assets/baeb48f8-0a2d-4df0-bcc9-f37da3583e60)
 
 2. **Number of sales transactions in each region**\
 The Query
@@ -123,6 +125,7 @@ The Query
 select COUNT(*) as NUMBER_OF_SALES, REGION from SalesData
 group by Region
 ```
+![SQL Sales Data 2](https://github.com/user-attachments/assets/8e579ccc-bd8b-44a7-81e7-23eef099992e)
 
 3. **Highest-selling product by total sales value**\
 The Query
@@ -131,35 +134,39 @@ select top 1 SUM(Revenue_Or_Sales) as TOTAL_SALES, PRODUCT from SalesData
 group by Product
 order by TOTAL_SALES desc
 ```
+![SQL Sales Data 3](https://github.com/user-attachments/assets/1f2a3fd7-a920-4a47-b927-372555cd3ec5)
 
-4. **Total revenue per product**
+4. **Total revenue per product**\
 The Query
 ```SQL
 select SUM(Revenue_Or_Sales) as TotalRevenue, Product from SalesData
 group by Product
 ```
+![SQL Sales Data 4](https://github.com/user-attachments/assets/b8a64d8b-ef22-4593-b04c-bd5fb3a47db2)
 
-5. **Monthly sales totals for the current year**
+5. **Monthly sales totals for the current year**\
 The Query
 ```SQL
 select 
 	MONTH(OrderDate) as SalesMonth,
-	SUM(Revenue_Or_Sales) as MonthlySalesTotal 
+	SUM(Revenue_Or_Sales) as MonthlySalesTotal2024 
 from SalesData
 where YEAR(OrderDate) = YEAR(GETDATE())
 group by MONTH(OrderDate)
 order by SalesMonth
 ```
+![SQL Sales Data 5](https://github.com/user-attachments/assets/4b973a3c-9506-42fd-84fa-36531de7166a)
 
-6. **Top 5 customers by total purchase amount**
+6. **Top 5 customers by total purchase amount**\
 The Query
 ```SQL
 select top 5 SUM(Revenue_Or_Sales) as Total_Purchase_Amount, Customer_Id from SalesData
 group by Customer_Id
 order by Total_Purchase_Amount desc
 ```
+![SQL Sales Data 6](https://github.com/user-attachments/assets/4afb6f68-b16b-4299-8b02-4b58ba14a305)
 
-7. **Percentage of total sales contributed by each region**
+7. **Percentage of total sales contributed by each region**\
 The Query
 ```SQL
 select Region, SUM(Revenue_Or_Sales) as Total_Sales,
@@ -167,8 +174,9 @@ select Region, SUM(Revenue_Or_Sales) as Total_Sales,
 	from SalesData
 	group by Region
 ```
+![SQL Sales Data 7](https://github.com/user-attachments/assets/ae626cb7-266b-489a-ba22-f601ee5ee977)
 
-8. **Products with no sales in the last quarter**
+8. **Products with no sales in the last quarter**\
 The Query
 ```SQL
 select Product, SUM(Quantity) as Product_With_No_Sale
@@ -178,6 +186,7 @@ where Product NOT IN (select Product from SalesData where
 					  )
 group by Product
 ```
+![SQL Sales Data 8](https://github.com/user-attachments/assets/a735a07b-04c5-4d1e-8085-c70b774297ba)
 
 
 
