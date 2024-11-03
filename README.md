@@ -6,6 +6,11 @@ You will need to explore sales data to uncover key insights such as top-selling 
 performance, and monthly sales trends. The goal is to produce an interactive Power BI 
 dashboard that highlights these findings.
 
+Parts In The Documentation\
+[EXCEL](#excel)\
+[PIVOT TABLE](#pivot-table)
+
+
 ## EXCEL
 - Perform an initial exploration of the sales data. Use pivot tables to summarize total sales by product, region, and month.
 - Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
