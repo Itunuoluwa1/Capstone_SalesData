@@ -17,7 +17,7 @@ Parts In The Documentation\
 
 [Remove Duplicate](#remove-duplicate)\
 [Pivot Table](#pivot-table)\
-[Excel Function](#excel-function)\
+[Excel Functions](#excel-functions)\
 [My Personal Interesting Report](#my-personal-interesting-report)
 
 #### Remove Duplicate
