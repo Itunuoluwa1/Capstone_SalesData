@@ -15,10 +15,10 @@ Parts In The Documentation\
 - Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
 - Create any other interesting report.\
 
-[Remove Duplicate](remove-duplicate)\
-[Pivot Table](pivot-table)\
-[Excel Function](excel-function)\
-[My Personal Interesting Report](my-personal-interesting-report)
+[Remove Duplicate](#remove-duplicate)\
+[Pivot Table](#pivot-table)\
+[Excel Function](#excel-function)\
+[My Personal Interesting Report](#my-personal-interesting-report)
 
 #### Remove Duplicate
 First and foremost, in my dataset I removed duplicate to impact the quality, accuracy nad reliability of my data. After removing duplicates in my data, the data of 50,000 rows was reduced to 9,921 rows removing 40,079 rows, therefore, making the data more accurate.
