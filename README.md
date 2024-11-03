@@ -82,3 +82,28 @@ I made a report of Region and Product By Revenue. In this report, the table show
 - Calculate the percentage of total sales contributed by each region.
 - Identify products with no sales in the last quarter.
 
+[Data Import](#data-import)\
+[Create Database](#create-database)\
+[Select Statement](#select-statement)\
+[Actual Tasks](#actual-tasks)
+
+#### Data Import
+The raw Capstone Data is an excel file that has two tables in two different worksheet and cannot be imported into sql ordinarily. Firstly, I opened the file in excel and removed duplicate from the data to impact quality and accuracy of my data. Then, I saved each of the worksheet as a CSV(Comma Delimited) file and was eventually having two files; one for Sales Data and the other for Customer Data. This way is would be possible to insert the data. Now I inserted the data by clicking import flat file and ensured to change the datatype where necessary and was able to insert the data successfully.
+
+#### Create Database
+A database is an organized collection of data that is stored and managed in a structured way to allow for easy access, retrieval and manipulation. I created a database for my capstone data.
+``` SQL
+create database CAPSTONE_DB
+```
+
+#### Select Statement
+A select statement is a type of Data Query Language(DQL). A DQL is used to fetch the data from the database. I selected the Sales Data table in order to preview it.
+```SQL
+select * from [dbo].[SalesData]
+```
+
+#### Actual Tasks
+
+
+
+
