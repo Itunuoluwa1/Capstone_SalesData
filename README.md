@@ -7,7 +7,8 @@ performance, and monthly sales trends. The goal is to produce an interactive Pow
 dashboard that highlights these findings.
 
 Parts In The Documentation\
-[EXCEL](#excel)
+[EXCEL](#excel)\
+[SQL](#sql)
 
 
 ## EXCEL
@@ -69,4 +70,15 @@ I made a report of Region and Product By Revenue. In this report, the table show
 ![Capstone North](https://github.com/user-attachments/assets/a47b2f11-c6d4-4b4c-8abd-269b6a320103)
 ![Capstone South](https://github.com/user-attachments/assets/48a78229-d995-424d-9ff0-249634c2a75b)
 ![Capstone West](https://github.com/user-attachments/assets/5fecc155-bce7-4872-8dce-0d81454cc4f4)
+
+
+## SQL
+- Retrieve the total sales for each product category.
+- Find the number of sales transactions in each region.
+- Find the highest-selling product by total sales value.
+- Calculate total revenue per product.
+- Calculate monthly sales totals for the current year.
+- Find the top 5 customers by total purchase amount.
+- Calculate the percentage of total sales contributed by each region.
+- Identify products with no sales in the last quarter.
 
