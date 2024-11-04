@@ -97,7 +97,7 @@ I made a report of Region and Product By Revenue. In this report, the table show
 The raw Capstone Data is an excel file that has two tables in two different worksheet and cannot be imported into sql ordinarily. Firstly, I opened the file in excel and removed duplicate from the data to impact quality and accuracy of my data. Then, I saved each of the worksheet as a CSV(Comma Delimited) file and was eventually having two files; one for Sales Data and the other for Customer Data. This way is would be possible to insert the data. Now I inserted the data by clicking import flat file and ensured to change the datatype where necessary and was able to insert the data successfully.
 
 #### Create Database
-A database is an organized collection of data that is stored and managed in a structured way to allow for easy access, retrieval and manipulation. I created a database for my capstone data.
+A database is an organized collection of data that is stored and managed in a structured way to allow for easy access, retrieval and manipulation. I created a database for my capstone data. Also note that SQL is not case-sensitive so I didn't neccesarily use one casing.
 ``` SQL
 create database CAPSTONE_DB
 ```
@@ -110,16 +110,18 @@ select * from [dbo].[SalesData]
 ![SQL Sales Data Table](https://github.com/user-attachments/assets/d35dc3d5-d62f-4e65-877b-3a24e627f94b)
 
 #### Actual Tasks
-1. **Total sales for each product category:**
-I firstly altered the table and added the Revenue_Or_Sales column, updated the column to be the product of quantity and unitprice before doing the task of showing Total sales for each product category.\
-The Query:
+I firstly altered the table and added the Revenue_Or_Sales column, updated the column to be the product of quantity and unitprice before doing the tasks. 
 ```SQL
 alter table [dbo].[SalesData]
 add Revenue_Or_Sales int 
 
 update SalesData
 set Revenue_Or_Sales = Quantity * UnitPrice
+```
 
+1. **Total sales for each product category:**
+The Query:
+```SQL
 select SUM(Revenue_Or_Sales) as TOTAL_SALES, PRODUCT from SalesData
 group by Product
 ```
