@@ -14,7 +14,7 @@ Parts In The Documentation\
 ## EXCEL
 - Perform an initial exploration of the sales data. Use pivot tables to summarize total sales by product, region, and month.
 - Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
-- Create any other interesting report.\
+- Create any other interesting report.
 
 [Remove Duplicate](#remove-duplicate)\
 [Pivot Table](#pivot-table)\
@@ -22,10 +22,16 @@ Parts In The Documentation\
 [My Personal Interesting Report](#my-personal-interesting-report)
 
 #### Remove Duplicate
-First and foremost, in my dataset I removed duplicate to impact the quality, accuracy nad reliability of my data. After removing duplicates in my data, the data of 50,000 rows was reduced to 9,921 rows removing 40,079 rows, therefore, making the data more accurate.
+First and foremost, in my dataset I removed duplicate to impact the quality, accuracy and reliability of my data. After removing duplicates in my data, the data of 50,000 rows was reduced to 9,921 rows removing 40,079 rows, therefore, making the data more accurate.
+
+#### Add Column
+Knowing that I would be needing Revenue column and I don't have it in my table, I added a revenue column whose value was a result of the Qauntity and UnitPrice column.
+```EXCEL
+= F2*G2
+```
 
 #### Pivot table
-I used pivot table and excel functions ton uncover key insight from the sales data in the Capstone project.\
+I used pivot table and excel functions to uncover key insight from the sales data in the Capstone project.\
 Pivot table is used for summarization of data in the project in order to uncover insights for reporting. 
 
 1. **Total Sales By Product:**
@@ -38,7 +44,7 @@ Pivot table to summarize total sales by region with pivot chart included.\
 
 3. **Total Sales By Month:**
 Pivot table to summarize total sales by month with pivot chart and slicer included. The slicer is used to filter the data in the pivot table and chart to only the selected data.\
-![Capstone Total Sales By Month (2)](https://github.com/user-attachments/assets/b8e28762-7928-44ce-97ee-196c2e0f47df)
+![Capstone Total Sales By Month (2)](https://github.com/user-attachments/assets/b8e28762-7928-44ce-97ee-196c2e0f47df)\
 I used yearly slicer to filter the pivot table and chart showing the total sales by month in each year.\
 ![Capstone 2023](https://github.com/user-attachments/assets/1bc2aa06-6910-4243-b834-bc78233475b5)
 ![Capstone 2024](https://github.com/user-attachments/assets/dc766e42-4406-43c8-8e27-6a2c029464f9)
@@ -47,7 +53,7 @@ I used yearly slicer to filter the pivot table and chart showing the total sales
 I used excel functions to make certain calculations and summarization in the dataset to attain insights from the project.
 1. **Average Sales Per Product:**
 I listed all the products and then used excel AVERAGEIF function to calculate the average sales per product of the sales data.
-```
+```EXCEL
 =AVERAGEIF($C$2:$C$9922,J7,$H$2:$H$9922)
 ```
 The table of the average sale per product:\
@@ -55,7 +61,7 @@ The table of the average sale per product:\
 
 2. **Total Revenue By Region:**
 I listed all the regions and then used excel SUMIF function to calculate the total revenue by region.
-```
+```EXCEL
 =SUMIF($D$2:$D$9922,J17,$H$2:$H$9922)
 ```
 The table of the total revenue by region:\
