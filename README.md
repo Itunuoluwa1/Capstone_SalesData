@@ -206,9 +206,7 @@ The Table:\
 ![SQL Sales Data 8](https://github.com/user-attachments/assets/a735a07b-04c5-4d1e-8085-c70b774297ba)
 
 ## Power BI
-Create a dashboard that visualizes the insights found in Excel and SQL. The 
-dashboard should include a sales overview, top-performing products, and 
-regional breakdowns.
+Create a dashboard that visualizes the insights found in Excel and SQL. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
 
 Power BI is a data visualization tool that converts data from different sources to make an interactive dashboard and BI reports.
 
@@ -236,8 +234,39 @@ I created a dashboard to visualize all that I did in my excel on this capstone s
 ![BI Sales Excel](https://github.com/user-attachments/assets/f4e13b48-c61f-402e-a31f-0ff15cae8277)
 
 #### SQL Insights
-To visualize all that I did in SQL on this my capstone sales data, I make all my question queries into views and then imported the views into my PowerBI and then visualize.
+To visualize all that I did in SQL on this my capstone sales data, I made all my question queries into views and then imported the views into my PowerBI and then visualized.\
 ![BI Sales SQL](https://github.com/user-attachments/assets/b9e3475f-6b59-4fb5-80be-af291158a7ec)
+
+#### Sales Overview
+I visualised a number of visual to show the sales overview on the sales data.
+- Total Sales per year
+- Sales by product
+- Sales by region
+- Average revenue by quantity
+- Total Customer by region
+- Total customer by product
+- Count order by region
+- Total revenue by order date
+- Month over month, year over year
+- Customer and region by revenue
+- Customer and product by revenue
+I used different types of visuals that shows trends and proper interactions like the line chart, waterfall chart, bar chart and more.\
+![BI Sales Sales](https://github.com/user-attachments/assets/459909fa-6060-4121-9299-fa0b2b25c7d8)\
+![BI Sales Sales Contd](https://github.com/user-attachments/assets/d5bdc4db-0c9e-4d50-869e-737a799c532d)\
+
+#### Top-Performing Products and Regional Breakdown
+This is the visual that shiws the products that are performing really well which that help with decision-making. In this dashboard, there is also Regional breakdown.\
+Top-Performing Product
+- Most ordered
+- Most revenue
+Regional-Breakdown
+- Region by product
+- Region by revenue
+- Region by order number (orderID count)
+- Region by customer 
+![BI Sales Sales Contd](https://github.com/user-attachments/assets/d5bdc4db-0c9e-4d50-869e-737a799c532d)\
+
+
 
 
 
