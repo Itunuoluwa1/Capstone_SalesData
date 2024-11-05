@@ -220,7 +220,16 @@ I also added a custom column of Revenue because I know that I would be needing i
 ```
  After doing this I loaded my data.
 
-
+#### Measures
+I created measures within my Sales Data.\
+Total Sales Revenue
+```
+= SUM(SalesData[Revenue])
+```
+Average Order Value (AOV): Dividing total sales by number of order
+```
+= SUM(SalesData[Revenue]) / COUNT(SalesData[OrderID])
+```
 
 
 
