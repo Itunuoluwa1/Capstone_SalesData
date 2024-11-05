@@ -210,6 +210,14 @@ Create a dashboard that visualizes the insights found in Excel and SQL. The dash
 
 Power BI is a data visualization tool that converts data from different sources to make an interactive dashboard and BI reports.
 
+[Data Import](#data-import)\
+[Measures](#measures)\
+[Excel Insights](#excel-insights)\
+[SQL Insights](#sql-insights)\
+[Sales Overview](#sales-overview)\
+[Top Performing Products and Regional Breakdown](#top-performing-products-and-regional-breakdown)
+
+
 #### Data Import
 I imported my capstone data into my Power BI desktop and clicked transform data. In the transform state I removed duplicates from my data to make it more accurate. \
 I also added a custom column of Revenue because I know that I would be needing it in my report.
@@ -238,7 +246,7 @@ To visualize all that I did in SQL on this my capstone sales data, I made all my
 ![BI Sales SQL](https://github.com/user-attachments/assets/b9e3475f-6b59-4fb5-80be-af291158a7ec)
 
 #### Sales Overview
-I visualised a number of visual to show the sales overview on the sales data.
+I visualised a number of visual to show the sales overview on the sales data. In this dashboard, I included slicers: The Region Slicer, Product Slicer and Year Slicer. I also used filters majorly the Top N filter to visualize Top 10 and Top 1 vivisuals even Bottom values.\
 - Total Sales per year
 - Sales by product
 - Sales by region
@@ -254,7 +262,7 @@ I used different types of visuals that shows trends and proper interactions like
 ![BI Sales Sales](https://github.com/user-attachments/assets/459909fa-6060-4121-9299-fa0b2b25c7d8)\
 ![BI Sales Sales Contd](https://github.com/user-attachments/assets/d5bdc4db-0c9e-4d50-869e-737a799c532d)\
 
-#### Top-Performing Products and Regional Breakdown
+#### Top Performing Products and Regional Breakdown
 This is the visual that shiws the products that are performing really well which that help with decision-making. In this dashboard, there is also Regional breakdown.\
 Top-Performing Product
 - Most ordered
@@ -264,7 +272,7 @@ Regional-Breakdown
 - Region by revenue
 - Region by order number (orderID count)
 - Region by customer 
-![BI Sales Sales Contd](https://github.com/user-attachments/assets/d5bdc4db-0c9e-4d50-869e-737a799c532d)\
+![BI Sales Sales Contd](https://github.com/user-attachments/assets/d5bdc4db-0c9e-4d50-869e-737a799c532d)
 
 
 
