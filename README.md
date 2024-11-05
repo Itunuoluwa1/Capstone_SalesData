@@ -235,6 +235,11 @@ Average Order Value (AOV): Dividing total sales by number of order
 I created a dashboard to visualize all that I did in my excel on this capstone sales data.\
 ![BI Sales Excel](https://github.com/user-attachments/assets/f4e13b48-c61f-402e-a31f-0ff15cae8277)
 
+#### SQL Insights
+To visualize all that I did in SQL on this my capstone sales data, I make all my question queries into views and then imported the views into my PowerBI and then visualize.
+![BI Sales SQL](https://github.com/user-attachments/assets/b9e3475f-6b59-4fb5-80be-af291158a7ec)
+
+
 
 
 
