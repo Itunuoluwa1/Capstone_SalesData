@@ -8,7 +8,8 @@ dashboard that highlights these findings.
 
 Parts In The Documentation\
 [EXCEL](#excel)\
-[SQL](#sql)
+[SQL](#sql)\
+[Power BI](#power-bi)
 
 
 ## EXCEL
@@ -204,6 +205,20 @@ group by Product
 The Table:\
 ![SQL Sales Data 8](https://github.com/user-attachments/assets/a735a07b-04c5-4d1e-8085-c70b774297ba)
 
+## Power BI
+Create a dashboard that visualizes the insights found in Excel and SQL. The 
+dashboard should include a sales overview, top-performing products, and 
+regional breakdowns.
+
+Power BI is a data visualization tool that converts data from different sources to make an interactive dashboard and BI reports.
+
+#### Data Import
+I imported my capstone data into my Power BI desktop and clicked transform data. In the transform state I removed duplicates from my data to make it more accurate. \
+I also added a custom column of Revenue because I know that I would be needing it in my report.
+```
+= [Quantity] * [UnitPrice]
+```
+ After doing this I loaded my data.
 
 
 
