@@ -231,6 +231,9 @@ Average Order Value (AOV): Dividing total sales by number of order
 = SUM(SalesData[Revenue]) / COUNT(SalesData[OrderID])
 ```
 
+#### Excel Insights
+I created a dashboard to visualize all that I did in my excel on this capstone sales data.\
+![BI Sales Excel](https://github.com/user-attachments/assets/f4e13b48-c61f-402e-a31f-0ff15cae8277)
 
 
 
